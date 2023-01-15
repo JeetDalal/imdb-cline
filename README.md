@@ -1,4 +1,4 @@
-# bluetooth_flutter_app
+# IMDb clone using TMDb api
 
 A new Flutter project.
 
