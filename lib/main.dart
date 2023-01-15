@@ -1,3 +1,4 @@
+import 'package:bluetooth_flutter_app/screens/description_screen.dart';
 import 'package:bluetooth_flutter_app/screens/home.dart';
 import 'package:flutter/material.dart';
 
@@ -11,11 +12,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: const HomePage(),
+      routes: {
+        '/des-route': (context) => const DescriptionScreen(),
+      },
     );
   }
 }
